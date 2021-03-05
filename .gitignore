@@ -21,3 +21,28 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# others
+.idea/
+.redcar
+*~
+*.swp
+*.swo
+.project
+.settings
+.classpath
+.project
+.mymetadata
+bin
+build/*
+.externalToolBuilders/
+build.number
+external
+/build
+/target/*
+.mvn
+src/main/resources/application.properties
+.attach*
+/target/
+.factorypath
+.sts4-cache/*
