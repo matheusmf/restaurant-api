@@ -12,6 +12,7 @@ public class RestaurantBuilder {
         return new RestaurantBuilder();
     }
 
+
     public RestaurantBuilder withNameAndAddress(String name, String uf, String city, String district, String address, String coordinates) {
         restaurant = new Restaurant(name, new Address(uf, city, district, address, coordinates));
         return this;
@@ -22,8 +23,8 @@ public class RestaurantBuilder {
         return this;
     }
 
-    public RestaurantBuilder withDeliveryApp(boolean ifood, boolean rappi, boolean uberEats, boolean james) {
-        restaurant.setDeliveryApp(new DeliveryApp(ifood, rappi, uberEats, james));
+    public RestaurantBuilder withDeliveryApp(DeliveryApp deliveryApp) {
+        restaurant.setDeliveryApp(deliveryApp);
         return this;
     }
 

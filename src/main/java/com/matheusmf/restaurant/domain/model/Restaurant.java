@@ -1,6 +1,7 @@
 package com.matheusmf.restaurant.domain.model;
 
 import com.matheusmf.restaurant.domain.enums.SocialMediaType;
+import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.List;
 
 public class Restaurant {
 
+    @Getter
     private String name;
     private Address address;
     @Setter
